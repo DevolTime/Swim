@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eren Yeager</title>
+    <title>Swim</title>
     <link rel="stylesheet" href="general.css">
+    <script src="https://kit.fontawesome.com/721e976458.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">Swim</div>
+            <div class="nav_links">
+                <li class="nav_links"><a href="index.html">Home</a></li>
+                <li class="nav_links"><a href="about.html">About</a></li>
+                <li class="nav_links"><a href="contact.html">Contact</a></li>
+            </div>
+            <div>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel_container">
+            <h1>Movilidad electrica</h1>
+            <div class="carousel" id="carousel">
+                <div class="carousel_item">
+                    <img src="Images/img1.jpg" alt="img1">
+                </div>
+                <div class="carousel_item">
+                    <img src="Images/img2.jpg" alt="img1">
+                </div>
+                <div class="carousel_item">
+                    <img src="Images/img3.jpg" alt="img1">
+                </div>
+                <div class="carousel_item">
+                    <img src="Images/img4.jpg" alt="img1">
+                </div>
+                <button class="carousel_btn prev_btn">⬅</button>
+                <button class="carousel_btn next_btn">➡</button>
+                <div class="content_indicator" id="indicator"></div>
+            </div>
+        </section>
+
+        <section class="card_popular">
+            <h2>Mas vendidos</h2>
+            <div class="card_container">
+                <div class="card_item">
+                    <img src="Images/scooter1.png" alt="popular1">
+                    <div class="popular_text">
+                        <h3>Swim</h3>
+                        <p>Swim</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <img src="Images/scooter2.png" alt="popular1">
+                    <div class="popular_text">
+                        <h3>Swim</h3>
+                        <p>Swim</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <img src="Images/scooter3.png" alt="popular1">
+                    <div class="popular_text">
+                        <h3>Swim</h3>
+                        <p>Swim</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <img src="Images/scooter4.png" alt="popular1">
+                    <div class="popular_text">
+                        <h3>Swim</h3>
+                        <p>Swim</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegir una scooter eléctrica?</h2>
+                <p class="section-subtitle">
+                    Descubre una forma más inteligente, económica y sostenible de moverte por la ciudad.
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">🚀</div>
+                        <h3>Más rápido en la ciudad</h3>
+                        <p>Evita el tráfico y llega a tu destino en menos tiempo.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">💰</div>
+                        <h3>Ahorro diario</h3>
+                        <p>Reduce gastos en transporte y olvídate de la gasolina.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🌱</div>
+                        <h3>Ecológico</h3>
+                        <p>Cuida el medio ambiente con cero emisiones.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🔋</div>
+                        <h3>Fácil de cargar</h3>
+                        <p>Cárgala en casa como tu celular, sin complicaciones.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🧘‍♂️</div>
+                        <h3>Menos estrés</h3>
+                        <p>Muévete libremente sin tráfico ni esperas.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🛠️</div>
+                        <h3>Mantenimiento mínimo</h3>
+                        <p>Menos piezas, menos problemas, más ahorro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping">
+            <div class="container">
+                <h2 class="section-title">Información de Envío</h2>
+                <p class="section-subtitle">
+                    Recibe tu scooter de forma rápida, segura y sin complicaciones. </p>
+                <p class="shipping-note">
+                    *En Bogotá y ciudades principales, los tiempos de entrega suelen ser más rápidos. </p>
+                <div class="shipping-grid">
+                    <div class="shipping-card">
+                        <div class="icon">🚚</div>
+                        <h3>Envíos a todo Colombia</h3>
+                        <p>Realizamos entregas en ciudades principales y municipios.</p>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="icon">⏱️</div>
+                        <h3>Entrega estimada</h3>
+                        <p>Entre 2 y 5 días hábiles según tu ubicación.</p>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="icon">📦</div>
+                        <h3>Empaque seguro</h3>
+                        <p>Tu scooter viaja protegida para llegar en perfectas condiciones.</p>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="icon">📍</div>
+                        <h3>Seguimiento del pedido</h3>
+                        <p>Recibe información del estado de tu envío en todo momento.</p>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="icon">🔒</div>
+                        <h3>Compra segura</h3>
+                        <p>Tus datos están protegidos con tecnología de seguridad avanzada.</p>
+                    </div>
+
+                    <div class="shipping-card">
+                        <div class="icon">📞</div>
+                        <h3>Soporte al cliente</h3>
+                        <p>Te acompañamos antes, durante y después de tu compra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p> Copyright &copy; 2026 Swim. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
