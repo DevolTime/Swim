@@ -42,4 +42,10 @@ li {
     text-transform: uppercase;
 }
 
-
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}

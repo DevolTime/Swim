@@ -126,11 +126,13 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .benefit-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
 }
 
 .icon {
@@ -156,7 +158,7 @@
 
 /* Card popular */
 
-.title_popular{
+.title_popular {
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -170,12 +172,12 @@
 }
 
 .title_popular {
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin-bottom: 40px;
+    color: black;
 }
 
 .card_container {
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -190,10 +192,11 @@
     cursor: pointer;
 }
 
-.card_item:hover {
+/* scale card*/
+/* .card_item:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+} */
 
 .card_img {
     background: #020617;
@@ -246,4 +249,75 @@
 
 .btn_card:hover {
     background: #0ea5e9;
+}
+
+/* Información de envío */
+
+.shipping {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+}
+
+.shipping .title_shipping {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle_shipping {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.shipping-note {
+    font-size: 1.8rem;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.shipping .subtitle_shipping {
+    color: #94a3b8;
+}
+
+.shipping-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.shipping-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shipping-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.shipping-card .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.shipping-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.shipping-card p {
+    font-size: 1.5rem;
+    color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+    .shipping .section-title {
+        font-size: 2rem;
+    }
 }
