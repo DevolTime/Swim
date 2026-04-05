@@ -14,6 +14,8 @@ html {
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
+    background: #0f172a;
+    color: white;
 }
 
 .nav_links {
@@ -126,5 +128,89 @@ li {
 
 .indicator:active {
     background-color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.benefits {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    color: #cbd5f5;
+    margin-bottom: 50px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 1.5rem;
+    color: #cbd5f5;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+.title_popular{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card_popular {
+    padding: 60px 20px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.title_popular {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
 }
 
