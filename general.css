@@ -9,64 +9,77 @@ html {
 }
 
 .navbar {
-    padding: 1rem 1rem 0 1rem;
     display: flex;
+    padding: 0 1rem 0 1rem;
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
-    margin: 0 0 2rem 0;
 }
 
 .nav_links {
-    list-style: none;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    padding: 1rem;
+    gap: 2rem;
+    list-style: none;
+}
 
+.nav_links li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    list-style: none;
 }
 
 li {
     list-style: none;
 }
 
-.logo{
+.logo {
     text-transform: uppercase;
 }
 
-.img3{
+.title {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    z-index: 30;
+    opacity: 0.6;
+}
+
+.img3 {
     object-position: center 80%;
 }
-.carousel_container{
+
+.carousel_container {
     position: relative;
     max-width: 1500px;
     margin: 20px auto;
     overflow: hidden;
 }
 
-.carousel{
+.carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel_item{
+.carousel_item {
     min-width: 100%;
     position: relative;
 }
 
-.carousel_item img{
+.carousel_item img {
     width: 100%;
     height: 800px;
     object-fit: cover;
     display: block;
 }
 
-.carousel_btn{
+.carousel_btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -80,19 +93,19 @@ li {
     z-index: 10;
 }
 
-.carousel_btn:hover{
+.carousel_btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.prev_btn{
+.prev_btn {
     left: 10px;
 }
 
-.next_btn{
+.next_btn {
     right: 10px;
 }
 
-.content_indicator{
+.content_indicator {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -101,7 +114,7 @@ li {
     gap: 10px;
 }
 
-.indicator{
+.indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -111,6 +124,7 @@ li {
 
 }
 
-.indicator:active{
+.indicator:active {
     background-color: white;
 }
+
