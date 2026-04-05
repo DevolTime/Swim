@@ -1,0 +1,249 @@
+.title {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    z-index: 30;
+    opacity: 0.6;
+}
+
+.img3 {
+    object-position: center 80%;
+}
+
+/* carousel */
+
+.carousel_container {
+    position: relative;
+    max-width: 1500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel_item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel_item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.carousel_btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev_btn {
+    left: 10px;
+}
+
+.next_btn {
+    right: 10px;
+}
+
+.content_indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.indicator:active {
+    background-color: white;
+}
+
+/* Beneficios */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.benefits {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    color: #cbd5f5;
+    margin-bottom: 50px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 1.5rem;
+    color: #cbd5f5;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Card popular */
+
+.title_popular{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card_popular {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.title_popular {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.card_container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card_item {
+    background: #0f172a;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.card_item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card_img {
+    background: #020617;
+    padding: 20px;
+}
+
+.card_img img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card_item:hover img {
+    transform: scale(1.1);
+}
+
+.card_content {
+    padding: 20px;
+}
+
+.card_content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn_card {
+    background: #38bdf8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #020617;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_card:hover {
+    background: #0ea5e9;
+}
