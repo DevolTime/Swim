@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="icon" href="Images/Logo.png">
     <script src="https://kit.fontawesome.com/721e976458.js" crossorigin="anonymous"></script>
 </head>
@@ -29,42 +29,36 @@
         </nav>
     </header>
 
-    <main>
-        <section class="contact">
-            <div class="container">
+    <section class="product-page">
+        <div class="product-container">
 
-                <h2 class="contact_title">Contáctanos</h2>
-                <p class="contact_subtitle">
-                    Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes posible.
-                </p>
-
-                <div class="contact_wrapper">
-
-                    <form class="contact_form">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="email" placeholder="Correo electrónico" required>
-                        <textarea placeholder="Escribe tu mensaje..." required></textarea>
-                        <button type="submit">Enviar mensaje</button>
-                    </form>
-
-                    <div class="contact_info">
-                        <h3>Información</h3>
-                        <p>📍 Bogotá, Colombia</p>
-                        <p>📞 +57 999 999 9999</p>
-                        <p>✉️ contacto@swim.com</p>
-
-                        <a href="https://wa.me/579999999999" target="_blank" class="whatsapp_btn">💬 WhatsApp</a>
-                    </div>
-
-                </div>
-
+            <!-- IMAGEN -->
+            <div class="product-image">
+                <img id="productImg">
             </div>
-        </section>
-    </main>
 
+            <!-- INFO -->
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <hr>
+                <div class="product-details">
+                    <h3>Detalles</h3>
+                    <ul class="detalles">
+                        <li>Motor eléctrico potente</li>
+                        <li>Batería de larga duración</li>
+                        <li>Ideal para ciudad</li>
+                        <li id="productRange"></li>
+                    </ul>
+                </div>
+                <p class="price" id="productPrice"></p>
+                <button class="buy-btn btn1">Comprar ahora</button>
+                <button class="cart-btn btn1">Añadir al carrito</button>
+            </div>
+
+        </div>
+    </section>
     <footer class="info_footer">
         <div class="footer_container">
-
             <div class="footer_col">
                 <img src="Images/logo3.png" class="logo" alt="">
                 <p>
@@ -108,13 +102,12 @@
                     <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-
         </div>
-
         <div class="footer_bottom">
             <p> Copyright &copy; 2026 - Swim. All rights reserved.</p>
         </div>
     </footer>
+    <script src="product.js"></script>
 </body>
 
 </html>

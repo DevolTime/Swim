@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* SERVICE SECTION*/
+.service {
+    text-align: center;
+}
+
+.service-title {
+    font-size: 3rem;
+}
+
+.service-subtitle {
+    color: #94a3b8;
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.service-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* PRECIOS */
+.service-pricing ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.service-pricing h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-pricing li {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+/* PROCESO */
+.service-steps h3 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.step {
+    font-size: 1.5rem;
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* GARANTÍA*/
+.service-guarantee {
+    margin-top: 30px;
+    color: #cbd5f5;
+}
+
+.service-guarantee h3 {
+    font-size: 2.2rem;
+}
+
+.service-guarantee p {
+    font-size: 1.4rem;
+}
+
+/* FORMULARIO*/
+.service-form {
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-form h3 {
+    font-size: 2rem;
+}
+
+.service-form input,
+.service-form textarea,
+.service-form select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: white;
+}
+
+.service-form textarea {
+    min-height: 120px;
+}
+
+.service-form button {
+    background: #38bdf8;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.service-form button:hover {
+    background: #0ea5e9;
+}
+
+/* UBICACIÓN (MAPA)*/
+.location-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #0f172a;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: none;
+}
+
+.location-info {
+    padding: 30px;
+}
+
+.location-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.location-info h4 {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    color: #cbd5f5;
+    font-size: 1.5rem;
+}
+
+/* LISTA SERVICIOS */
+.services-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.services-list li {
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+/* BOTON UBICACIÓN */
+.location-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_location {
+    background: #38bdf8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #020617;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_location:hover {
+    background: #0ea5e9;
+}
+
+.btn_whatsapp {
+    display: inline-block;
+    background: #25D366;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.service-faq {
+    margin-top: 40px;
+}
+
+.service-faq h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.5rem;
+}
+
+.faq-item p {
+    font-size: 1.4rem;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .service-title {
+        font-size: 1.8rem;
+    }
+
+    .service-subtitle {
+        font-size: 1rem;
+    }
+
+    .location-card {
+        grid-template-columns: 1fr;
+    }
+
+    .location-map iframe {
+        min-height: 250px;
+    }
+
+    .service-form {
+        padding: 0 10px;
+    }
+}

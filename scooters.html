@@ -30,15 +30,116 @@
     </header>
 
     <main>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog-header">
+                    <h2>Catálogo de Scooters</h2>
+                    <input type="text" id="searchInput" placeholder="Buscar scooter..." class="search">
+                </div>
 
+                <div class="catalog-layout">
+                    <aside class="filters">
+                        <h3>Filtros</h3>
+                        <label>Precio</label>
+                        <select id="priceFilter">
+                            <option value="all">Todos</option>
+                            <option value="0-1000000">$0 - $1.000.000</option>
+                            <option value="1000000-2000000">$1.000.000 - $2.000.000</option>
+                            <option value="2000000-3000000">$2.000.000 - $3.000.000</option>
+                            <option value="3000000-4000000">$3.000.000 - $4.000.000</option>
+                            <option value="4000000-5000000">$4.000.000 - $5.000.000</option>
+                        </select>
+
+                        <label>Autonomía</label>
+                        <select id="rangeFilter">
+                            <option value="all">Todos</option>
+                            <option value="0-20">Hasta 20km</option>
+                            <option value="20-40">20km - 40km</option>
+                            <option value="40-60">40km - 60km</option>
+                            <option value="60-80">60km - 80km</option>
+                            <option value="80-100">80km - 100km</option>
+                        </select>
+
+                        <label>Ordenar por</label>
+                        <select id="sortPrice">
+                            <option value="default">Todos</option>
+                            <option value="low-high">Precio: menor a mayor</option>
+                            <option value="high-low">Precio: mayor a menor</option>
+                        </select>
+                    </aside>
+
+                    <div class="products-grid">
+                        <div class="product-card" data-name="scooter x1" data-price="1200000" data-range="25">
+                            <img src="Images/scooter1.png">
+                            <h3>Scooter X1</h3>
+                            <p>Autonomía: 25km</p>
+                            <span class="price">$1.200.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="scooter pro" data-price="1800000" data-range="40">
+                            <img src="Images/scooter2.png">
+                            <h3>Scooter Pro</h3>
+                            <p>Autonomía: 40km</p>
+                            <span class="price">$1.800.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="scooter urban" data-price="950000" data-range="20">
+                            <img src="Images/scooter3.png">
+                            <h3>Scooter Urban</h3>
+                            <p>Autonomía: 20km</p>
+                            <span class="price">$950.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="scooter urban pro" data-price="2300000" data-range="45">
+                            <img src="Images/scooter4.png">
+                            <h3>Scooter Urban Pro</h3>
+                            <p>Autonomía: 45km</p>
+                            <span class="price">$2.300.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="Razor Max" data-price="2800000" data-range="56">
+                            <img src="Images/scooter5.png">
+                            <h3>Razor Max</h3>
+                            <p>Autonomía: 56km</p>
+                            <span class="price">$2.800.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="KuKirin M4 Max" data-price="3400000" data-range="70">
+                            <img src="Images/scooter6.png">
+                            <h3>KuKirin M4 Max</h3>
+                            <p>Autonomía: 70km</p>
+                            <span class="price">$3.400.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="KuKirin M5 Max" data-price="3800000" data-range="75">
+                            <img src="Images/scooter7.png">
+                            <h3>KuKirin M5 Max</h3>
+                            <p>Autonomía: 75km</p>
+                            <span class="price">$3.800.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+
+                        <div class="product-card" data-name="ML2 Max" data-price="5000000" data-range="88">
+                            <img src="Images/scooter8.png">
+                            <h3>ML2 Max</h3>
+                            <p>Autonomía: 88km</p>
+                            <span class="price">$5.000.000</span>
+                            <button onclick="goToProduct(this)">Ver producto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
 
     <footer class="info_footer">
         <div class="footer_container">
-
             <div class="footer_col">
                 <img src="Images/logo3.png" class="logo" alt="">
                 <p>
@@ -82,10 +183,12 @@
                     <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-
         </div>
-
         <div class="footer_bottom">
             <p> Copyright &copy; 2026 - Swim. All rights reserved.</p>
         </div>
     </footer>
+    <script src="scripts2.js"></script>
+</body>
+
+</html>
