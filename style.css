@@ -14,7 +14,6 @@
 }
 
 /* carousel */
-
 .carousel_container {
     position: relative;
     max-width: 1500px;
@@ -34,7 +33,7 @@
 
 .carousel_item img {
     width: 100%;
-    height: 800px;
+    height: 80vh;
     object-fit: cover;
     display: block;
 }
@@ -44,11 +43,12 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: wheat;
-    padding: 16px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
-    font-size: 18px;
     transition: background-color 0.3s;
     z-index: 10;
 }
@@ -194,10 +194,10 @@
 }
 
 /* scale card*/
-/* .card_item:hover {
+.card_item:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-} */
+} 
 
 .card_img {
     background: #020617;
@@ -208,12 +208,12 @@
     width: 100%;
     height: 180px;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
 }
 
-.card_item:hover img {
+/* .card_item:hover img {
     transform: scale(1.1);
-}
+} */
 
 .card_content {
     padding: 20px;
