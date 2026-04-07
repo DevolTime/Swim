@@ -138,5 +138,7 @@ li {
 }
 
 @media (max-width: 768px) {
-    
+    .enlaces{
+        display: none;
+    }
 }
