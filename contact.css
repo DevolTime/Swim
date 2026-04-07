@@ -98,4 +98,10 @@
     .contact_title {
         font-size: 2rem;
     }
+
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
