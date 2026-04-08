@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #020617;
-    color: white;
-    overflow-x: hidden;
-}
-
 .container {
     max-width: 1100px;
     margin: auto;
@@ -15,6 +7,8 @@ body {
 /* SERVICE SECTION*/
 .service {
     text-align: center;
+    background: #020617;
+    color: white;
 }
 
 .service-title {
@@ -55,11 +49,16 @@ body {
 
 .service-pricing h3 {
     font-size: 2rem;
-    margin-bottom: 10px;
 }
 
 .service-pricing li {
     margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+.service-card p{
+    margin-top: 10px;
+    font-size: 1.4rem;
     color: #cbd5f5;
 }
 
@@ -86,15 +85,16 @@ body {
 /* GARANTÍA*/
 .service-guarantee {
     margin-top: 30px;
-    color: #cbd5f5;
 }
 
 .service-guarantee h3 {
     font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
 .service-guarantee p {
     font-size: 1.4rem;
+    color: #cbd5f5;
 }
 
 /* FORMULARIO*/
@@ -107,7 +107,7 @@ body {
 }
 
 .service-form h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .service-form input,
@@ -174,6 +174,13 @@ body {
 .location-info p {
     color: #cbd5f5;
     font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #38bdf8, transparent);
 }
 
 /* LISTA SERVICIOS */
