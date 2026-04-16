@@ -172,20 +172,19 @@ li {
         opacity: 1;
     }
 
-    .menu_toggle {
-        display: block;
-        order: 1;
-    }
-
-    .logo {
+    .navbar a {
         order: 2;
     }
 
+    .menu_toggle {
+        order: 1;
+    }
+
     .nav_links {
-        order: 4;
+        order: 3;
     }
 
     .navbar ul:last-child {
-        order: 3;
+        order: 4;
     }
 }

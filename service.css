@@ -122,6 +122,7 @@
 
 .service-form textarea {
     min-height: 120px;
+    resize: none;
 }
 
 .service-form button {
